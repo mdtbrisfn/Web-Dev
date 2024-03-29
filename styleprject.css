@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bold : #d672d8;
+    --primary : #d675ab;
+    --middle :#dfb89a;
+    --secondary :#e5e5b0;
+    --light : #eaead7;
+}
+
+.container {
+    border: 2px solid pink;
+    background-color: var(--secondary);
+    display : flex;
+    flex-direction: column;
+    align-items : center;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.container > h1 {
+    font-family: "Rakkas", "serif"
+}
+
+.container-card {
+    display: flex;
+    gap: 2rem;
+}
+
+.card {
+    border: 2px solid maroon;
+    border-radius: 25px;
+    width: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card > a{
+    text-decoration: none;
+    background-color: var(--middle);
+    width: 80%;
+    height: 30ox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px var(--middle)
+}
+
+.card > a:hover {
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+    box-shadow: 0 0 10px;
+    transition: all 0.2s;
+}
